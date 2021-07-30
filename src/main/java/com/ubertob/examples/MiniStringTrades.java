@@ -26,16 +26,16 @@ public class MiniStringTrades {
 
     private static void benchmarks(TradeRefBrowser searcherRef, InlineTradeBrowser searcherInline, TradeRefEncodedBrowser searcherRefEncoded, MiniStringTradeBrowser searcherMiniString, String account) {
         cronoSum(() -> searcherRef.sumByAccountFor(account), "Ref with for");
-//        cronoSum(() -> searcherRef.sumByAccountStream(account), "Ref with stream");
+        cronoSum(() -> searcherRef.sumByAccountStream(account), "Ref with stream");
 
         cronoSum(() -> searcherRefEncoded.sumByAccountFor(account), "RefEncoded with for");
-//        cronoSum(() -> searcherRefEncoded.sumByAccountStream(account), "RefEncoded with stream");
+        cronoSum(() -> searcherRefEncoded.sumByAccountStream(account), "RefEncoded with stream");
 
         cronoSum(() -> searcherInline.sumByAccountFor(account), "Inline with for");
-//            cronoSum(() -> searcherInline.sumByAccountStream(account), "Inline with stream");
+        cronoSum(() -> searcherInline.sumByAccountStream(account), "Inline with stream");
 
         cronoSum(() -> searcherMiniString.sumByAccountFor(account), "MiniString with for");
-//            cronoSum(() -> searcherMiniString.sumByAccountStream(account), "MiniString with stream");
+        cronoSum(() -> searcherMiniString.sumByAccountStream(account), "MiniString with stream");
     }
 
     private static void cronoSum(Supplier<Double> searcher, String desc) {

@@ -1,6 +1,8 @@
 package com.ubertob;
 
 import static com.ubertob.examples.MiniStringTrades.generatingTradesAndBrowing;
+import com.ubertob.examples.*;
+import com.ubertob.animals.*;
 
 public class Main {
 
@@ -19,24 +21,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-//        BrowseTree.recursiveCalls();
+        BrowseTree.recursiveCalls();
 //
-//        System.out.println("\n\nNormal class Shark " + Metadata.extractClassMetadata(Shark.class));
-//        System.out.println("\n\nInline Type Cat " + Metadata.extractClassMetadata(Cat.class));
+        System.out.println("\n\nNormal class Shark " + Metadata.extractClassMetadata(Shark.class));
+        System.out.println("\n\nPrimitive class Cat " + Metadata.extractClassMetadata(Cat.class));
 //
-////        Cat? maybeCat = null;
-////        System.out.println("\n\nInline Type Cat? " + Metadata.extractClassMetadata(maybeCat.class));
+        Cat.ref maybeCat = null;
+        System.out.println("\n\nPrimitive class Cat.ref " + Metadata.extractClassMetadata(Cat.ref.class));
 //
-//        FlattenArrays.equalityAndToString();
+        FlattenArrays.equalityAndToString();
 //
-//        FlattenArrays.boxesAndNullability();
+        FlattenArrays.boxesAndNullability();
 //
-//        FlattenArrays.flattenedArray();
+        FlattenArrays.flattenedArray();
 //
-//        Generics.wrappingInlined();
+        Generics.wrappingInlined();
 //
-//        FlattenedStrings.userMemorySize();
-
+        FlattenedStrings.userMemorySize();
 
         generatingTradesAndBrowing();
 
