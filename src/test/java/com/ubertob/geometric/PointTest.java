@@ -48,7 +48,7 @@ class PointTest {
         var p4 = p1.displace(2,-2);
 
 
-        assertEquals("[value class com.ubertob.geometric.Point, 5, 5]", p1.toString());
+        assertTrue(p1.toString().startsWith("com.ubertob.geometric.Point@"));
         System.out.println(p2); //[value class com.ubertob.geometric.Point, 5, 5]
         System.out.println(p3); //[value class com.ubertob.geometric.Point, 7, 3]
 
@@ -59,7 +59,7 @@ class PointTest {
     @Test
     void testGenerics(){
 
-        var list = new ArrayList<Point>();
+        var list = new ArrayList<Point.ref>();
         list.add(Point.of(3, 4));
 //        list.add(null); //Error: incompatible types: <nulltype> cannot be converted to com.ubertob.geometric.Point
 

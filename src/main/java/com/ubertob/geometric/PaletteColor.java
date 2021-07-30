@@ -1,6 +1,6 @@
 package com.ubertob.geometric;
 
-inline public class PaletteColor {
+public primitive class PaletteColor {
     public final byte colorIndex;
 
     public PaletteColor(byte index) {

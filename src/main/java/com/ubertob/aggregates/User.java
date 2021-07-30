@@ -1,7 +1,4 @@
 package com.ubertob.aggregates;
-
-inline
-
 public class User {
 
     private EnumTypes type;

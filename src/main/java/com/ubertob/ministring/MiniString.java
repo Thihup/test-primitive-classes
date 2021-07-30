@@ -1,7 +1,7 @@
 package com.ubertob.ministring;
 
 
-inline public class MiniString {
+public primitive class MiniString {
 
     long raw;
 

@@ -1,6 +1,6 @@
 package com.ubertob.ministring;
 
-inline public class TradeInline {
+public primitive class TradeInline {
     final double amount;
     final String account;
     final String security;

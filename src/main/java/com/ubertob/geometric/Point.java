@@ -1,7 +1,7 @@
 package com.ubertob.geometric;
 
 
-inline public class Point {
+public primitive class Point {
     public final int x;
     public final int y;
 

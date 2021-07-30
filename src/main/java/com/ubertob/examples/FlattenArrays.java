@@ -103,7 +103,7 @@ public class FlattenArrays {
         System.out.printf("You can add a null to an array of Boxed value");
 
 
-        var notNullableDogs = new ArrayList<Dog>(); //inline types cannot be used as nullable without ?
+        var notNullableDogs = new ArrayList<Dog.ref>(); //inline types cannot be used as nullable without ?
         notNullableDogs.add(new Dog("another dog"));
 //            notNullableDogs.add(null); //Compile Error: incompatible types: <nulltype> cannot be converted to Dog
     }

@@ -2,7 +2,7 @@ package com.ubertob.aggregates;
 
 import java.util.Arrays;
 
-inline public class Order {
+public primitive class Order {
     public final String id;
     public final OrderedItem[] items; //not flattened
 

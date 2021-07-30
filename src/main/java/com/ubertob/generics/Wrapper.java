@@ -2,7 +2,7 @@ package com.ubertob.generics;
 
 import java.util.function.Function;
 
-inline public class Wrapper<T> {
+public primitive class Wrapper.val<T> {
 
     private final T value;
 

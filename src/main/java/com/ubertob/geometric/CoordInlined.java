@@ -1,6 +1,6 @@
 package com.ubertob.geometric;
 
-inline public class CoordInlined {
+public primitive class CoordInlined {
 
     public final int x;
     public final int y;

@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 
 public class AnimalsTest {
 
@@ -41,7 +42,7 @@ public class AnimalsTest {
         System.out.println(animalSet);
 
 
-        Set<Cat> catSet = new HashSet<>();
+        Set<Cat.ref> catSet = new HashSet<>();
         catSet.add(new Cat("Tom"));
         catSet.add(new Cat("Jerry"));
         catSet.add(new Cat("Silvester"));
@@ -62,9 +63,9 @@ public class AnimalsTest {
         try {
             lockedMethod(d); //Runtime error
 //        java.lang.IllegalMonitorStateException: com.ubertob.animals.Dog
-
+            fail();
         } catch (IllegalMonitorStateException e) {
-            assertEquals("com.ubertob.animals.Dog", e.getMessage());
+            
         }
     }
 

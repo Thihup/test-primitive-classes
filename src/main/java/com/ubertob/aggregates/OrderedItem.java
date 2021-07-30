@@ -1,6 +1,6 @@
 package com.ubertob.aggregates;
 
-inline public class OrderedItem {
+public primitive class OrderedItem {
     final int id;
     final String desc;
     final int quantity;

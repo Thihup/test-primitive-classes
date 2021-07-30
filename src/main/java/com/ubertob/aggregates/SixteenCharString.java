@@ -1,6 +1,6 @@
 package com.ubertob.aggregates;
 
-inline public class SixteenCharString {
+public primitive class SixteenCharString {
     private final byte c0;
     private final byte c1;
     private final byte c2;

@@ -1,8 +1,6 @@
 package com.ubertob.animals;
 
-
-@__inline__
-public class Cat implements Animal {
+public primitive class Cat implements Animal {
 
     public final String name;
 

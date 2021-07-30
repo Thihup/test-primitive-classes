@@ -1,6 +1,6 @@
 package com.ubertob.ministring;
 
-inline public class TradeMiniString{
+public primitive class TradeMiniString{
     final double amount;
     final MiniString account;
     final MiniString security;

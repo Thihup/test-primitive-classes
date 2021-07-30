@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
- inline public class Branch implements Node {
+ public primitive class Branch implements Node {
 
     final public Node parent;
     final public Set<Integer> values = new HashSet<Integer>();

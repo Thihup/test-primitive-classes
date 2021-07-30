@@ -1,6 +1,6 @@
 package com.ubertob.geometric;
 
- inline public class Line {
+ public primitive class Line {
 
     public final CoordInlined startPoint;
     public final CoordInlined endPoint;

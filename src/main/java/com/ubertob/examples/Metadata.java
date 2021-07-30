@@ -23,15 +23,15 @@ public class Metadata {
 
                 + outputPrefix + "getTypeName(): " + classToInvokeInlineMethodsOn.getTypeName()
 
-                + outputPrefix + "getComponentType(): " + classToInvokeInlineMethodsOn.getComponentType()
+                + outputPrefix + "getComponentType(): " + classToInvokeInlineMethodsOn.getComponentType();
 
-                + outputPrefix + "isInlineClass(): " + classToInvokeInlineMethodsOn.isInlineClass()
+                // + outputPrefix + "isPrimitiveClass(): " + classToInvokeInlineMethodsOn.isPrimitiveClass()
 
-                + outputPrefix + "isIndirectType(): " + classToInvokeInlineMethodsOn.isIndirectType()
+                // + outputPrefix + "isIndirectType(): " + classToInvokeInlineMethodsOn.isIndirectType()
 
-                + outputPrefix + "isNullableType(): " + classToInvokeInlineMethodsOn.isNullableType()
+                // + outputPrefix + "isNullableType(): " + classToInvokeInlineMethodsOn.isNullableType()
 
-                + outputPrefix + "isPrimitive(): " + classToInvokeInlineMethodsOn.isPrimitive();
+                // + outputPrefix + "isPrimitive(): " + classToInvokeInlineMethodsOn.isPrimitive();
 //
 //                + outputPrefix + " final?: " + isFinal(classToInvokeInlineMethodsOn);
 
