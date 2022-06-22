@@ -8,14 +8,14 @@ public primitive class PaletteColor {
     }
 
     public static PaletteColor green(){
-        return __WithField(PaletteColor.default.colorIndex, 1);
+        return new PaletteColor((byte) 1);
     }
 
     public static PaletteColor blue(){
-        return __WithField(PaletteColor.default.colorIndex, 2);
+        return new PaletteColor((byte) 2);
     }
 
     public static PaletteColor red(){
-        return __WithField(PaletteColor.default.colorIndex, 3);
+        return new PaletteColor((byte) 3);
     }
 }

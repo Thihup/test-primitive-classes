@@ -87,10 +87,10 @@ public class FlattenArrays {
 
 
 
-            lines[1] = new Wrapper("pippo");
-            lines[2] = new Wrapper(123);
-            lines[3] = new Wrapper(new Date());
-            lines[4] = new Wrapper(new CoordInlined(3, 4));
+            lines[1] = new Wrapper<>("pippo");
+            lines[2] = new Wrapper<>(123);
+            lines[3] = new Wrapper<>(new Date());
+            lines[4] = new Wrapper<>(new CoordInlined(3, 4));
         }
     }
 

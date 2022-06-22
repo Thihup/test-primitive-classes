@@ -11,10 +11,7 @@ public primitive class Point {
     }
 
     public static Point of(int x, int y) {
-        Point p = Point.default;
-        Point p1 = __WithField(p.x, x); //WithField operator is allowed only with -XDallowWithFieldOperator
-        Point p2 = __WithField(p1.y, y);
-        return p2;
+        return new Point(x, y);
     }
 
     private Point() {

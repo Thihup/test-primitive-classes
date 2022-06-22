@@ -2,7 +2,7 @@ package com.ubertob.generics;
 
 import java.util.function.Function;
 
-public primitive class Wrapper.val<T> {
+public primitive class Wrapper<T> {
 
     private final T value;
 
@@ -14,7 +14,7 @@ public primitive class Wrapper.val<T> {
         return new Wrapper<>(f.apply(value));
     }
 
-    public Wrapper<T> flatMap(Function<T, Wrapper<T>> f){
+    public Wrapper<T> flatMap(Function<T, Wrapper.ref<T>> f){
         return f.apply(value);
     }
 

@@ -18,10 +18,7 @@ public primitive class CoordInlined {
 
 
     public static CoordInlined of(int x, int y) {
-        CoordInlined c = CoordInlined.default;
-        CoordInlined c1 = __WithField(c.x, x); //WithField operator is allowed only with -XDallowWithFieldOperator
-        CoordInlined c2 = __WithField(c1.y, y);
-        return c2;
+        return new CoordInlined(x, y);
     }
 
 }
